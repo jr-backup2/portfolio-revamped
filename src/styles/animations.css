@@ -1,0 +1,19 @@
+@keyframes pulse-versus {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(8, 217, 255, 0.5), 0 0 55px rgba(255, 59, 31, 0.35);
+    transform: skewX(-10deg) scale(1);
+  }
+  50% {
+    text-shadow: 0 0 34px rgba(255, 59, 31, 0.65), 0 0 72px rgba(8, 217, 255, 0.45);
+    transform: skewX(-10deg) scale(1.04);
+  }
+}
+
+.versus-glow {
+  animation: pulse-versus 3s ease-in-out infinite;
+}
+
+.scanlines {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 6px;
+}

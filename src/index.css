@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "./styles/theme.css";
+@import "./styles/animations.css";
 
 :root {
   font-family:
@@ -11,6 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  min-width: 320px;
   margin: 0;
+  background: #05040a;
+}
+
+* {
+  box-sizing: border-box;
 }
